@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/white"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+   	<LinearLayout
+  		android:orientation="horizontal"
+  	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    	
+  		<ImageView
+	  		android:id="@+id/imgFB"
+	  		android:padding="5dp"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"/>
+  
+  	  	<TextView
+		    android:id="@+id/txtRecentRecommendationsHeader" 
+	  		android:textStyle="bold"
+		  	android:textColor="@drawable/black"
+		  	android:paddingBottom="5dp"
+	  		android:textSize="18sp"
+	    	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ListView 
+    	android:id="@+id/android:list"
+    	android:clickable="true"
+    	android:choiceMode="singleChoice"
+    	android:dividerHeight="2px"
+    	android:divider="@drawable/darkgray"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+  	<TextView 
+  		android:id="@+id/android:empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nobody listening, darn!"/>
+</LinearLayout>

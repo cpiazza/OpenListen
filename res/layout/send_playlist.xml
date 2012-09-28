@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/cmp.openlisten"
+  android:background="@drawable/white"
+  android:layout_width="fill_parent"
+  android:layout_gravity="center_horizontal"
+  android:orientation="vertical"
+  android:layout_height="fill_parent">
+  
+	<TextView
+		android:text="Coming Soon" 
+		android:id="@+id/label"
+		android:textSize="20sp" 
+		android:textColor="@drawable/black"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:paddingTop="10dp"
+		android:paddingBottom="25dp"
+		android:layout_gravity="center_horizontal"
+		>
+	</TextView>
+	<Button
+		android:text="Login to Facebook" 
+		android:id="@+id/SettingsFromSendPlaylist"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:visibility="invisible"
+		android:layout_gravity="center_horizontal"
+	>
+	</Button>
+
+  	<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content">
+    
+    	<com.admob.android.ads.AdView  
+          android:id="@+id/ad" 
+          android:visibility="gone"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Android Social Music"
+        />      
+	</RelativeLayout>
+
+</LinearLayout>

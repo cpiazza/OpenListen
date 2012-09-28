@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/cmp.openlisten"
+  android:orientation="vertical"
+  android:gravity="center_horizontal"
+  android:background="@drawable/white"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <TextView
+  	android:id="@+id/recommendationSent"
+  	android:text="Recommendation Sent"
+  	android:textColor="@drawable/black"
+  	android:textStyle="bold"
+  	android:textSize="20sp"
+  	android:paddingTop="10dp"
+  	android:paddingBottom="10dp"
+	android:gravity="center_horizontal"  	
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content" />
+  	
+  	<Button
+  	android:id="@+id/btnsendAnotherRecommendation"
+	android:clickable="true"
+	android:textStyle="bold"
+	android:text="Send Another!"	
+  	android:textSize="20sp"
+  	android:paddingTop="10dp"
+  	android:gravity="center_horizontal"
+	android:textColor="@drawable/fbBlue"
+  	android:layout_width="wrap_content"	
+  	android:layout_height="wrap_content" />
+  	
+    <TableLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<TableRow
+    		android:orientation="vertical"
+    		android:paddingTop="20dp"
+    		android:gravity="center_horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content">
+     		<ImageView
+    			android:id="@+id/btnWhosListening"
+    			android:clickable="true"
+    			android:paddingRight="50dp"
+    			android:src="@drawable/listening"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    		/>   	
+    		<ImageView
+    			android:id="@+id/btnViewPlaylist"
+    			android:clickable="true"
+    			android:src="@drawable/playlist"    			
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    		/>
+    	</TableRow>
+	</TableLayout>  	
+  	
+	<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content">
+    
+    	<com.admob.android.ads.AdView  
+          android:id="@+id/ad" 
+          android:visibility="gone"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Android Social Music"
+        />      
+	</RelativeLayout>		
+		  	
+  
+</LinearLayout>

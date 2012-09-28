@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/white"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  
+  <LinearLayout
+  	android:orientation="horizontal"
+  	android:background="@drawable/white"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content">
+  	
+  	  	<TextView
+    		android:id="@+id/txtVRDate" 
+	  		android:textStyle="bold"
+	  		android:paddingRight="5dp"
+	  		android:textColor="@drawable/black"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"/>
+  	  	<TextView
+    		android:id="@+id/txtVRUsername" 
+	  		android:textStyle="bold"
+	  		android:textColor="@drawable/darkgray"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"/>    		
+  	  	<TextView
+    		android:id="@+id/txtVRSaid" 
+			android:text=" said:"
+	  		android:textColor="@drawable/darkgray"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"/>    		
+  
+  </LinearLayout>
+  
+  <TextView
+  	android:id="@+id/txtVRComment" 
+	android:paddingLeft="10dp"
+	android:textColor="@drawable/black"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+  
+</LinearLayout>

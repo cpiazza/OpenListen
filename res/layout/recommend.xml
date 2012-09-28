@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/cmp.openlisten"
+  android:orientation="vertical"
+  android:background="@drawable/white"
+  android:gravity="left"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+	<LinearLayout
+  		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:orientation="vertical"
+		android:background="@drawable/fbBlue"
+  		android:gravity="left"
+  		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" >  	
+  		<TextView
+  			android:id="@+id/txtTrack"
+  			android:textStyle="bold"
+  			android:textColor="@drawable/white"
+  			android:textSize="20sp"
+  			android:padding="5dp"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />
+  		<TextView
+  			android:id="@+id/txtArtist"
+  			android:textColor="@drawable/white"
+  			android:padding="5dp"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />		
+  		<TextView
+	  		android:id="@+id/txtAlbum"
+	  		android:textColor="@drawable/white"
+	  		android:padding="5dp"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	
+	<RadioGroup 
+		android:id="@+id/RadioGroup01" 
+		android:paddingTop="10dp"
+		android:paddingBottom="10dp"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		<RadioButton
+			android:id="@+id/recommendTrack"
+			android:text="Recommend Track"
+			android:textColor="@drawable/black"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />
+		<RadioButton
+			android:id="@+id/recommendAlbum"
+			android:text="Recommend Album"
+			android:textColor="@drawable/black"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />			 	
+	</RadioGroup>
+	
+	<LinearLayout
+  		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:orientation="vertical"
+  		android:gravity="left"
+  		android:paddingLeft="25dp"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content">
+  		<CheckBox
+  			android:id="@+id/cbNewFave"
+  			android:text="New Fave"
+  			android:textColor="@drawable/black"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />
+  		<CheckBox
+  			android:id="@+id/cbOldir"
+  			android:text="Oldie but Goodie"
+  			android:textColor="@drawable/black"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />			
+  		<CheckBox
+  			android:id="@+id/cbCurrentObsession"
+  			android:text="Current Obsession"
+  			android:textColor="@drawable/black"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />			
+	</LinearLayout>
+	
+	<TextView
+		android:id="@+id/cannotRecommend"
+		android:text="You must first Login to your facebook account to send recommendations. Please click the settings button below."
+		android:visibility="gone"
+		android:textColor="@drawable/black"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+	
+	<Button
+		android:id="@+id/btnSend"
+		android:text="Send It!"
+		android:gravity="center_horizontal"
+		android:padding="10dp"		
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" />
+		
+	<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content">
+    
+    	<com.admob.android.ads.AdView  
+          android:id="@+id/ad" 
+          android:visibility="gone"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Android Social Music"
+        />      
+	</RelativeLayout>		
+		
+</LinearLayout>

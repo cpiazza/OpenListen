@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/white"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  	
+  	<RadioGroup 
+		android:id="@+id/RadioGroup02" 
+		android:paddingTop="10dp"
+		android:paddingBottom="10dp"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		<RadioButton
+			android:id="@+id/daily"
+			android:text="Daily"
+			android:paddingRight="10dp"
+			android:textColor="@drawable/black"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />
+		<RadioButton
+			android:id="@+id/weekly"
+			android:text="Weekly"
+			android:paddingRight="10dp"
+			android:textColor="@drawable/black"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />			 	
+		<RadioButton
+			android:id="@+id/allTime"
+			android:text="All Time"
+			android:textColor="@drawable/black"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />			
+	</RadioGroup>
+  	
+  	
+    <ListView 
+    	android:id="@+id/android:list"
+    	android:clickable="true"
+    	android:choiceMode="singleChoice"
+    	android:dividerHeight="2px"
+    	android:divider="@drawable/darkgray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+  	<TextView 
+  		android:id="@+id/android:empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+        
+</LinearLayout>

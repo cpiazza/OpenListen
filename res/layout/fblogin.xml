@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/cmp.openlisten"  
+  android:orientation="vertical"
+  android:background="@drawable/white"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+	<TextView
+	 		android:id="@+id/fbHeader"
+  			android:text="Login with Facebook"
+  			android:textColor="@drawable/white"
+  			android:background="@drawable/fbBlue"
+  			android:textStyle="bold"
+  			android:padding="5dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+	/>
+	
+	<LinearLayout
+	  	xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:orientation="vertical"
+  		android:background="@drawable/white"  		
+  		android:gravity="center"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content">
+  		
+  		<TextView
+  		android:text="Get started with OpenListen by Logging In with Facebook"
+  		android:padding="5dp"
+  		android:textColor="@drawable/black"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"/>
+  
+		<cmp.openlisten.facebook.android.LoginButton 
+			android:id="@+id/login"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+		/>
+		
+		<TextView android:id="@+id/label" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@drawable/black"			
+			android:layout_margin="5dp"
+		/>
+	</LinearLayout>
+	<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content">
+    
+    	<com.admob.android.ads.AdView  
+          android:id="@+id/ad" 
+          android:visibility="gone"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Android Social Music"
+        />      
+	</RelativeLayout>
+		
+
+		
+  
+</LinearLayout>

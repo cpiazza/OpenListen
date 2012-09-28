@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/white"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+   	<LinearLayout
+  		android:orientation="horizontal"
+  	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    	
+  		<ImageView
+	  		android:id="@+id/imgFB"
+	  		android:padding="5dp"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"/>
+  
+	  	<TextView
+		  	android:id="@+id/txtUserRankingHeader"
+		  	android:textColor="@drawable/black"
+	    	android:textStyle="bold"
+		    android:textSize="18sp"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content" />
+  	</LinearLayout>
+  	
+    <TableLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	
+    	<TableRow
+    		android:id="@+id/userRankRow1"
+    		android:clickable="false"    		
+    		android:orientation="horizontal"
+    		android:gravity="center_horizontal"
+    		android:paddingBottom="20dp"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content">
+    		
+    		<LinearLayout
+  				android:orientation="vertical"
+  				android:gravity="center_horizontal"
+  				android:paddingRight="35dp"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content">
+  				
+  				<ImageView
+  					android:id="@+id/userRankPres"
+  					android:clickable="true"
+  					android:src="@drawable/pres_50"
+  					android:paddingBottom="10dp"
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content" />
+  				<TextView
+  					android:id="@+id/txtUserRankPres"
+  					android:textColor="@drawable/black"
+  					android:text="President"
+    				android:textStyle="bold"  				
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content" />  				
+  					  				
+    		</LinearLayout>
+    		<LinearLayout
+  				android:orientation="vertical"
+  				android:gravity="center_horizontal"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content">
+  				<ImageView
+  					android:id="@+id/userRankVicePres"
+  					android:clickable="true"
+  					android:src="@drawable/vp_50"
+  					android:paddingBottom="10dp"
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content" />
+  				<TextView
+  					android:id="@+id/txtUserRankVicePres"
+  					android:textColor="@drawable/black"
+  					android:text="Vice President"
+    				android:textStyle="bold"  				
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content" />  				
+  				
+    		</LinearLayout>    		
+    	</TableRow>
+    	<TableRow
+    		android:id="@+id/userRankRow2"
+    		android:clickable="false"    		
+    		android:orientation="horizontal"
+    		android:gravity="center_horizontal"
+    		android:paddingBottom="20dp"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content">
+    		<LinearLayout
+  				android:orientation="vertical"
+  				android:gravity="center_horizontal"
+  				android:paddingRight="35dp"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content">
+  				
+  				<ImageView
+  					android:id="@+id/userRankLieu"
+  					android:clickable="true"
+  					android:src="@drawable/lieutenant_50"
+  					android:paddingBottom="10dp"
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content" />
+  				<TextView
+  					android:id="@+id/txtUserRankLieu"
+  					android:textColor="@drawable/black"
+  					android:text="Lieutenant"
+    				android:textStyle="bold"  				
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content" />  				
+  					  				
+    		</LinearLayout>
+    		<LinearLayout
+  				android:orientation="vertical"
+  				android:gravity="center_horizontal"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content">
+  				<ImageView
+  					android:id="@+id/userRankPrivate"
+  					android:clickable="true"
+  					android:src="@drawable/private_50"
+  					android:paddingTop="20dp"
+  					android:paddingBottom="10dp"
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content" />
+  				<TextView
+  					android:id="@+id/txtUserRankPrivate"
+  					android:textColor="@drawable/black"
+  					android:text="Private"
+    				android:textStyle="bold"  				
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content" />  				
+  				
+    		</LinearLayout>    		
+    	
+    	</TableRow>
+     	<TableRow
+    		android:id="@+id/userRankRow3"
+    		android:clickable="false"    		
+    		android:orientation="horizontal"
+    		android:gravity="center_horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content">
+    		<LinearLayout
+  				android:orientation="vertical"
+  				android:gravity="center_horizontal"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content">
+  				<ImageView
+  					android:id="@+id/userRankCivilian"
+  					android:clickable="true"
+  					android:src="@drawable/civ_50"
+  					android:paddingBottom="10dp"
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content" />
+  				<TextView
+  					android:id="@+id/txtUserRankCivilian"
+  					android:textColor="@drawable/black"
+  					android:text="Civilian"
+    				android:textStyle="bold"  				
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content" />  				
+    		</LinearLayout>
+    	
+    	</TableRow>
+    </TableLayout>
+</LinearLayout>

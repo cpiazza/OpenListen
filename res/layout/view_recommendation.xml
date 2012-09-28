@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/white"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <LinearLayout
+  android:orientation="vertical"
+  android:paddingBottom="5dp"
+  android:background="@drawable/fbBlue"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  	<TextView
+  			android:id="@+id/RecommendedTitle"
+        	android:layout_width="wrap_content"
+        	android:textColor="@drawable/white"
+        	android:paddingTop="5dp"
+        	android:paddingLeft="5dp"
+        	android:textStyle="bold"
+        	android:layout_height="wrap_content"/>
+  	<TextView
+  			android:id="@+id/RecommendedArtist"
+        	android:layout_width="wrap_content"
+        	android:textColor="@drawable/white"
+        	android:paddingLeft="5dp"
+        	android:layout_height="wrap_content"/>        	
+  	<TextView
+  			android:id="@+id/RecommendedWho"
+        	android:layout_width="wrap_content"
+        	android:textColor="@drawable/white"
+        	android:paddingLeft="5dp"
+        	android:paddingBottom="5dp"
+        	android:layout_height="wrap_content"/>        	
+  </LinearLayout>
+  
+  <LinearLayout
+  android:orientation="vertical"
+  android:paddingBottom="5dp"
+  android:background="@drawable/white"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  	<LinearLayout
+  		android:orientation="horizontal"
+  		android:padding="5dp"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content">
+  		
+  		<ImageView
+  			android:id="@+id/likeButton"
+  			android:paddingRight="5dp"
+  			android:clickable="true"
+  		  	android:layout_width="wrap_content"
+  			android:layout_height="wrap_content" />
+  			
+  		<TextView
+  			android:id="@+id/likeText"
+  			android:clickable="true"
+  			android:textColor="@drawable/black"
+  		  	android:layout_width="wrap_content"
+  			android:layout_height="wrap_content" />
+
+  	</LinearLayout>
+  	
+    <ListView 
+    	android:id="@+id/android:list"
+    	android:clickable="false"
+    	android:choiceMode="singleChoice"
+    	android:dividerHeight="2px"
+    	android:divider="@drawable/darkgray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+  	<TextView 
+  		android:id="@+id/android:empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@drawable/darkgray"
+        android:padding="5dp"
+        android:text="No comments yet... start the conversation!"/>
+  </LinearLayout>      
+  <EditText
+      	android:id="@+id/editComment"
+      	android:paddingTop="10dp"
+      	android:textColor="@drawable/black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+  <Button
+    	android:id="@+id/btnAddComment"
+      	android:paddingTop="5dp"
+      	android:text="Add Comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/cmp.openlisten"  
+  android:orientation="vertical"
+  android:background="@drawable/white"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <LinearLayout
+  	android:orientation="horizontal"
+  	android:padding="5dp"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  >
+  
+  	<ImageView
+  		android:id="@+id/RankIcon"
+  		android:paddingTop="5dp"
+  		android:paddingRight="5dp"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"/>
+
+  	<LinearLayout
+  		android:orientation="vertical"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content">  		  		
+  	
+  	<TextView
+  		android:id="@+id/txtRankName"
+  		android:textSize="18dp"
+  		android:textColor="@drawable/black"
+  		android:textStyle="bold"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"/>
+  	
+  	<TextView
+	  	android:id="@+id/txtRankDescription"
+	  	android:textColor="@drawable/black"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"/>
+  	</LinearLayout>	
+  </LinearLayout>  	
+  	
+  <ListView 
+    	android:id="@+id/android:list"
+    	android:clickable="true"
+    	android:choiceMode="singleChoice"
+    	android:dividerHeight="2px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+  <TextView 
+  		android:id="@+id/android:empty"
+  		android:padding="10dp"
+  		android:textColor="@drawable/darkgray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nothing here, move on..."/>
+  	
+  <RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content">
+    
+  <com.admob.android.ads.AdView  
+          android:id="@+id/ad" 
+          android:visibility="gone"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Android Social Music"
+        />      
+	</RelativeLayout>  
+</LinearLayout>

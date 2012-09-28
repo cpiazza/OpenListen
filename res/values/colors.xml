@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<drawable name="fbBlue">#d05200</drawable>
+<drawable name="white">#ffffff</drawable>
+<drawable name="black">#000000</drawable>
+<drawable name="darkgray">#666666</drawable>
+<color name="appwidget_text">#ffffffff</color>
+<color name="tab_indicator_text">#000000</color>
+</resources>

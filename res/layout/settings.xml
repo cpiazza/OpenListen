@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/cmp.openlisten"
+  android:orientation="vertical"
+  android:background="@drawable/white"
+  android:gravity="left"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <ScrollView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:scrollbars="vertical">
+	
+	<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">	
+	
+	<TextView
+	 		android:id="@+id/strProfileHeader"
+  			android:text="Your Profile"
+  			android:textColor="@drawable/white"
+  			android:background="@drawable/fbBlue"
+  			android:textStyle="bold"
+  			android:padding="5dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+	/>
+  	<TextView android:id="@+id/strEnterOLUserName"
+  			android:text="OpenListen Username"
+  			android:textColor="@drawable/black"
+  			android:textStyle="bold"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="20dp"
+		/>		
+	<EditText android:id="@+id/editOLUserName"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="10dp"
+	/>
+	<TextView android:id="@+id/strDateOfBirth"
+  			android:text="Date Of Birth (MM/DD/YYYY)"
+  			android:textColor="@drawable/black"
+  			android:textStyle="bold"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="20dp"
+		/>
+		
+	<EditText
+			android:id="@+id/txtDateOfBirth"
+			android:hint="MM/DD/YYYY"
+			android:layout_marginLeft="20dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+	/>
+	<TextView android:id="@+id/strGender"
+  			android:text="Gender"
+  			android:textColor="@drawable/black"
+  			android:textStyle="bold"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="20dp"
+		/>		
+	<RadioGroup 
+		android:id="@+id/RadioGroupGender" 
+		android:paddingTop="2dp"
+		android:paddingBottom="10dp"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		<RadioButton
+			android:id="@+id/GenderMale"
+			android:text="Male"
+			android:textColor="@drawable/black"
+			android:layout_marginLeft="30dp"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />
+		<RadioButton
+			android:id="@+id/GenderFemale"
+			android:textColor="@drawable/black"
+			android:layout_marginLeft="30dp"
+			android:text="Female"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />			 	
+	</RadioGroup>	
+	<TextView
+	 		android:id="@+id/strPublishHeader"
+	 		android:padding="5dp"
+  			android:text="Publishing"
+  			android:textColor="@drawable/white"
+  			android:background="@drawable/fbBlue"
+  			android:textStyle="bold"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+	/>	
+  	<TextView android:id="@+id/strEnterSetting"
+  			android:text="Enable playlist publishing"
+  			android:textStyle="bold"
+  			android:textColor="@drawable/black"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="20dp"
+		/>
+		
+	<CheckBox android:id="@+id/cbDaily"
+		android:text="Daily playlist publishing"
+		android:textColor="@drawable/black"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="20dp" />
+		 
+	<CheckBox android:id="@+id/cbClear"
+		android:text="Clear playlist after publish"
+		android:textColor="@drawable/black"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp"
+		android:layout_marginLeft="20dp" />
+		
+	<CheckBox android:id="@+id/cbRank"
+		android:text="Publish New High Ranks"
+		android:textColor="@drawable/black"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="20dp" />
+		
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">	
+		
+			<Button android:id="@+id/btnSaveSettings"
+				android:text="Save Settings"
+				android:textStyle="bold"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginLeft="20dp" />	
+
+			<Button android:id="@+id/btnLogout"
+				android:text="Logout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="20dp" />	
+
+		
+		</LinearLayout>
+	</LinearLayout>
+	</ScrollView>		
+	<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content">
+    
+    	<com.admob.android.ads.AdView  
+          android:id="@+id/ad" 
+          android:visibility="gone"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Android Social Music"
+        />      
+	</RelativeLayout>
+		
+
+</LinearLayout>
