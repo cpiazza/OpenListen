@@ -199,7 +199,6 @@ public class OpenListenService extends Service {
 			//os.setDebugString(this, "Daily Publish Preference is True");
 			Date d = new Date();
 			int iDay = d.getDay();
-			int iHours = d.getHours();
 			int iLast = os.getLastDayPublished(this); 
 			
 			//os.setDebugString(this, "Last Published: " + String.valueOf(iLast) + ", Today: " + String.valueOf(iDay));
